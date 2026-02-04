@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="YourStartup — Delightful product that solves X for Y" />
+  <title>YourStartup — Launch faster</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="#">
+        <img src="assets/logo.svg" alt="YourStartup logo" class="logo" />
+        <span class="brand-name">YourStartup</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-ghost" href="#signup">Get early access</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Build faster. Delight customers.</h1>
+          <p class="lead">YourStartup helps teams ship better experiences with less effort. One line of code, endless possibilities.</p>
+          <form id="signup" class="signup-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <label for="email" class="sr-only">Email address</label>
+            <input id="email" name="email" type="email" placeholder="Your email" required>
+            <button type="submit" class="btn btn-primary">Get early access</button>
+            <p class="hint">We’ll email you updates. No spam.</p>
+          </form>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="mockup">
+            <svg width="560" height="360" viewBox="0 0 560 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="560" height="360" rx="20" fill="url(#g)" />
+              <defs>
+                <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#7C3AED" />
+                  <stop offset="1" stop-color="#06B6D4" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <h2 class="section-title">Features that scale</h2>
+        <p class="section-sub">Everything you need to go from idea to delighted customers.</p>
+        <div class="grid">
+          <div class="card">
+            <h3>Integrated</h3>
+            <p>Ship faster with pre-built integrations and sensible defaults.</p>
+          </div>
+          <div class="card">
+            <h3>Secure</h3>
+            <p>Enterprise-grade security and compliance built in from day one.</p>
+          </div>
+          <div class="card">
+            <h3>Scalable</h3>
+            <p>Grow confidently with performant infrastructure and monitoring.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+      <div class="container">
+        <h2 class="section-title">Simple pricing</h2>
+        <div class="pricing-grid">
+          <div class="plan">
+            <h3>Starter</h3>
+            <p class="price">Free</p>
+            <ul>
+              <li>Up to 3 projects</li>
+              <li>Email support</li>
+            </ul>
+            <a class="btn" href="#signup">Start free</a>
+          </div>
+          <div class="plan plan-highlight">
+            <h3>Pro</h3>
+            <p class="price">$29/mo</p>
+            <ul>
+              <li>Unlimited projects</li>
+              <li>Priority support</li>
+            </ul>
+            <a class="btn btn-primary" href="#signup">Get Pro</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get in touch</h2>
+        <p>Questions? Email us at <a href="mailto:hello@yourstartup.com">hello@yourstartup.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> YourStartup — Built with ❤️</p>
+      <div class="social">
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
